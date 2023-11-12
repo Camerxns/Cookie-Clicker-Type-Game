@@ -1,23 +1,44 @@
-*{
+* {
     margin: auto;
     background-color: lightgray;
+    box-sizing: border-box;
 }
+
+body {
+    font-size: 16px;
+}
+
 .cookie {
     width: 15%;
 }
-.cookie:active{
+
+.cookie:active {
     transform: scale(1.2);
     transition: transform 0.2s ease-in-out;
 }
-.cookie-img{
+
+.cookie-img {
     text-align: center;
     margin-bottom: 5%;
 }
-.counter{
+
+.counter {
     text-align: center;
-    font-size: 50pt;
-    margin-bottom: 10%;
+    font-size: 4vw;
+    margin-bottom: 2vw;
 }
-.autoclicker{
+
+.autoclicker {
     text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .cookie {
+        width: 50%;
+    }
+
+    .counter {
+        font-size: 8vw;
+        margin-bottom: 4vw;
+    }
 }
